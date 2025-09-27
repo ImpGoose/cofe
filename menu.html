@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Меню | Blue Brew Кофейня</title>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html" class="logo">Blue Brew</a>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="index.html#about">О нас</a>
+            <a href="menu.html" style="color: #64ffda;">Меню</a>
+            <a href="index.html#contact">Контакты</a>
+        </div>
+    </nav>
+    
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <h1>Наше меню</h1>
+        <p>Откройте для себя уникальные вкусы наших кофейных напитков и десертов</p>
+    </section>
+    
+    <!-- Фильтры категорий -->
+    <div class="category-filters">
+        <button class="filter-btn active" data-category="all">Все позиции</button>
+        <button class="filter-btn" data-category="coffee">Кофе</button>
+        <button class="filter-btn" data-category="tea">Чай</button>
+        <button class="filter-btn" data-category="desserts">Десерты</button>
+        <button class="filter-btn" data-category="special">Специальные предложения</button>
+    </div>
+    
+    <!-- Меню -->
+    <div class="menu-container">
+        <!-- Кофе -->
+        <section class="menu-category" id="coffee">
+            <h2 class="category-title scroll-reveal">Кофе</h2>
+            <div class="menu-grid">
+                <!-- Позиция 1 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Эспрессо Blue</h3>
+                        <span class="item-price">250 ₽</span>
+                    </div>
+                    <p class="item-description">Наш фирменный эспрессо с нотками черники и темного шоколада</p>
+                    <div class="item-details">
+                        <span>Объем: 30 мл</span>
+                        <span>Крепость: высокая</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 2 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Американо</h3>
+                        <span class="item-price">280 ₽</span>
+                    </div>
+                    <p class="item-description">Классический американо с идеальным балансом крепости и воды</p>
+                    <div class="item-details">
+                        <span>Объем: 180 мл</span>
+                        <span>Крепость: средняя</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 3 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Капучино</h3>
+                        <span class="item-price">320 ₽</span>
+                    </div>
+                    <p class="item-description">Идеальное соотношение эспрессо, молока и воздушной пенки</p>
+                    <div class="item-details">
+                        <span>Объем: 200 мл</span>
+                        <span>Пенка: густая</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 4 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Латте</h3>
+                        <span class="item-price">340 ₽</span>
+                    </div>
+                    <p class="item-description">Нежный кофейный напиток с большим количеством вспененного молока</p>
+                    <div class="item-details">
+                        <span>Объем: 250 мл</span>
+                        <span>Молоко: альтернативное по выбору</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 5 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Флэт Уайт</h3>
+                        <span class="item-price">300 ₽</span>
+                    </div>
+                    <p class="item-description">Концентрированный напиток с тонким слоем микропены</p>
+                    <div class="item-details">
+                        <span>Объем: 160 мл</span>
+                        <span>Крепость: высокая</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 6 -->
+                <div class="menu-item scroll-reveal" data-category="coffee">
+                    <div class="item-header">
+                        <h3 class="item-name">Раф кофе</h3>
+                        <span class="item-price">360 ₽</span>
+                    </div>
+                    <p class="item-description">Нежный кофе с ванильным сахаром и сливками</p>
+                    <div class="item-details">
+                        <span>Объем: 200 мл</span>
+                        <span>Вкус: ванильный</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Чай -->
+        <section class="menu-category" id="tea">
+            <h2 class="category-title scroll-reveal">Чай</h2>
+            <div class="menu-grid">
+                <!-- Позиция 7 -->
+                <div class="menu-item scroll-reveal" data-category="tea">
+                    <div class="item-header">
+                        <h3 class="item-name">Английский завтрак</h3>
+                        <span class="item-price">280 ₽</span>
+                    </div>
+                    <p class="item-description">Классический черный чай с насыщенным вкусом</p>
+                    <div class="item-details">
+                        <span>Объем: 400 мл</span>
+                        <span>Крепость: средняя</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 8 -->
+                <div class="menu-item scroll-reveal" data-category="tea">
+                    <div class="item-header">
+                        <h3 class="item-name">Эрл Грей</h3>
+                        <span class="item-price">300 ₽</span>
+                    </div>
+                    <p class="item-description">Черный чай с маслом бергамота</p>
+                    <div class="item-details">
+                        <span>Объем: 400 мл</span>
+                        <span>Аромат: бергамот</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 9 -->
+                <div class="menu-item scroll-reveal" data-category="tea">
+                    <div class="item-header">
+                        <h3 class="item-name">Зеленый чай с жасмином</h3>
+                        <span class="item-price">320 ₽</span>
+                    </div>
+                    <p class="item-description">Нежный зеленый чай с цветами жасмина</p>
+                    <div class="item-details">
+                        <span>Объем: 400 мл</span>
+                        <span>Вкус: цветочный</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 10 -->
+                <div class="menu-item scroll-reveal" data-category="tea">
+                    <div class="item-header">
+                        <h3 class="item-name">Матча латте</h3>
+                        <span class="item-price">380 ₽</span>
+                    </div>
+                    <p class="item-description">Традиционный японский чай матча с молоком</p>
+                    <div class="item-details">
+                        <span>Объем: 300 мл</span>
+                        <span>Температура: горячий/холодный</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 11 -->
+                <div class="menu-item scroll-reveal" data-category="tea">
+                    <div class="item-header">
+                        <h3 class="item-name">Чай с облепихой</h3>
+                        <span class="item-price">350 ₽</span>
+                    </div>
+                    <p class="item-description">Черный чай с облепихой и медом</p>
+                    <div class="item-details">
+                        <span>Объем: 400 мл</span>
+                        <span>Вкус: ягодный</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Десерты -->
+        <section class="menu-category" id="desserts">
+            <h2 class="category-title scroll-reveal">Десерты</h2>
+            <div class="menu-grid">
+                <!-- Позиция 12 -->
+                <div class="menu-item scroll-reveal" data-category="desserts">
+                    <div class="item-header">
+                        <h3 class="item-name">Тирамису</h3>
+                        <span class="item-price">420 ₽</span>
+                    </div>
+                    <p class="item-description">Классический итальянский десерт с кофейной пропиткой</p>
+                    <div class="item-details">
+                        <span>Вес: 150 г</span>
+                        <span>Алкоголь: есть/нет</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 13 -->
+                <div class="menu-item scroll-reveal" data-category="desserts">
+                    <div class="item-header">
+                        <h3 class="item-name">Чизкейк Нью-Йорк</h3>
+                        <span class="item-price">380 ₽</span>
+                    </div>
+                    <p class="item-description">Нежный чизкейк с ягодным соусом</p>
+                    <div class="item-details">
+                        <span>Вес: 120 г</span>
+                        <span>Основа: песочная</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 14 -->
+                <div class="menu-item scroll-reveal" data-category="desserts">
+                    <div class="item-header">
+                        <h3 class="item-name">Круассан с миндалем</h3>
+                        <span class="item-price">280 ₽</span>
+                    </div>
+                    <p class="item-description">Слоеный круассан с миндальной начинкой</p>
+                    <div class="item-details">
+                        <span>Вес: 80 г</span>
+                        <span>Подача: теплый</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 15 -->
+                <div class="menu-item scroll-reveal" data-category="desserts">
+                    <div class="item-header">
+                        <h3 class="item-name">Макарон ассорти</h3>
+                        <span class="item-price">320 ₽</span>
+                    </div>
+                    <p class="item-description">Набор из 4 макарон с разными вкусами</p>
+                    <div class="item-details">
+                        <span>Количество: 4 шт</span>
+                        <span>Вкусы: ежедневно разные</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 16 -->
+                <div class="menu-item scroll-reveal" data-category="desserts">
+                    <div class="item-header">
+                        <h3 class="item-name">Брауни</h3>
+                        <span class="item-price">300 ₽</span>
+                    </div>
+                    <p class="item-description">Шоколадный брауни с грецкими орехами</p>
+                    <div class="item-details">
+                        <span>Вес: 100 г</span>
+                        <span>Подача: с мороженым</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Специальные предложения -->
+        <section class="menu-category" id="special">
+            <h2 class="category-title scroll-reveal">Специальные предложения</h2>
+            <div class="menu-grid">
+                <!-- Позиция 17 -->
+                <div class="menu-item scroll-reveal" data-category="special">
+                    <div class="item-header">
+                        <h3 class="item-name">Латте с лавандой</h3>
+                        <span class="item-price">380 ₽</span>
+                    </div>
+                    <p class="item-description">Нежный латте с экстрактом лаванды и цветочным послевкусием</p>
+                    <div class="item-details">
+                        <span>Объем: 250 мл</span>
+                        <span>Сезон: весна-лето</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 18 -->
+                <div class="menu-item scroll-reveal" data-category="special">
+                    <div class="item-header">
+                        <h3 class="item-name">Кофе-тоник</h3>
+                        <span class="item-price">350 ₽</span>
+                    </div>
+                    <p class="item-description">Освежающий напиток из эспрессо и тоника с лаймом</p>
+                    <div class="item-details">
+                        <span>Объем: 300 мл</span>
+                        <span>Температура: холодный</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 19 -->
+                <div class="menu-item scroll-reveal" data-category="special">
+                    <div class="item-header">
+                        <h3 class="item-name">Фильтр-кофе дня</h3>
+                        <span class="item-price">400 ₽</span>
+                    </div>
+                    <p class="item-description">Ежедневно обновляемая серия фильтр-кофе из разных регионов</p>
+                    <div class="item-details">
+                        <span>Объем: 250 мл</span>
+                        <span>Сорт: меняется ежедневно</span>
+                    </div>
+                </div>
+                
+                <!-- Позиция 20 -->
+                <div class="menu-item scroll-reveal" data-category="special">
+                    <div class="item-header">
+                        <h3 class="item-name">Десерт шеф-кондитера</h3>
+                        <span class="item-price">450 ₽</span>
+                    </div>
+                    <p class="item-description">Авторский десерт, созданный специально для этого сезона</p>
+                    <div class="item-details">
+                        <span>Вес: 150 г</span>
+                        <span>Меняется: ежемесячно</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Футер -->
+    <footer>
+        <p>© 2023 Blue Brew Coffee. Все права защищены.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Blue Brew Кофейня</title>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html" class="logo">Blue Brew</a>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="menu.html">Меню</a>
+            <a href="contacts.html" style="color: #64ffda;">Контакты</a>
+        </div>
+    </nav>
+    
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="header-bg">
+            <!-- Анимированные точки для фона -->
+            <div class="pulse-dot" style="top: 20%; left: 15%; animation-delay: 0s;"></div>
+            <div class="pulse-dot" style="top: 60%; left: 80%; animation-delay: 0.5s;"></div>
+            <div class="pulse-dot" style="top: 40%; left: 50%; animation-delay: 1s;"></div>
+            <div class="pulse-dot" style="top: 80%; left: 30%; animation-delay: 1.5s;"></div>
+        </div>
+        <h1>Свяжитесь с нами</h1>
+        <p>Мы всегда рады вашим вопросам, отзывам и предложениям</p>
+    </section>
+    
+    <!-- Основной контент -->
+    <div class="contact-content">
+        <!-- Карта и контактная информация -->
+        <section class="contact-main">
+            <div class="map-container scroll-reveal">
+                <div class="map-placeholder">
+                    <div class="map-icon">📍</div>
+                    <h3>Центральная кофейня</h3>
+                    <p>ул. Кофейная, 15, Москва</p>
+                    <p>Нажмите для просмотра карты</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Телефон</h3>
+                    <p class="contact-detail">+7 (495) 123-45-67</p>
+                    <p class="contact-detail">+7 (925) 765-43-21</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-detail">hello@bluebrew.ru</p>
+                    <p class="contact-detail">orders@bluebrew.ru</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <h3 class="contact-title">Часы работы</h3>
+                    <p class="contact-detail">Пн-Пт: 8:00 - 22:00</p>
+                    <p class="contact-detail">Сб-Вс: 9:00 - 23:00</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h3 class="contact-title">Социальные сети</h3>
+                    <p class="contact-detail">Instagram: @bluebrew.coffee</p>
+                    <p class="contact-detail">Telegram: @bluebrew_coffee</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Форма обратной связи -->
+        <section class="form-section scroll-reveal">
+            <h2>Напишите нам</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Иван Иванов" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Тема</label>
+                    <select id="subject" required>
+                        <option value="" disabled selected>Выберите тему</option>
+                        <option value="reservation">Бронирование столика</option>
+                        <option value="feedback">Отзыв</option>
+                        <option value="question">Вопрос</option>
+                        <option value="cooperation">Сотрудничество</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" placeholder="Ваше сообщение..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </section>
+        
+        <!-- Филиалы -->
+        <section class="locations-section scroll-reveal">
+            <h2>Наши кофейни</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3 class="location-name">Центральная</h3>
+                    <div class="location-details">
+                        <p>ул. Кофейная, 15</p>
+                        <p>Метро: Пушкинская</p>
+                        <p>Пн-Вс: 8:00 - 23:00</p>
+                    </div>
+                    <div class="location-features">
+                        <span class="feature-tag">Wi-Fi</span>
+                        <span class="feature-tag">Веранда</span>
+                        <span class="feature-tag">Зарядки</span>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <h3 class="location-name">Исторический центр</h3>
+                    <div class="location-details">
+                        <p>ул. Арбат, 32</p>
+                        <p>Метро: Арбатская</p>
+                        <p>Пн-Вс: 9:00 - 22:00</p>
+                    </div>
+                    <div class="location-features">
+                        <span class="feature-tag">Книжный уголок</span>
+                        <span class="feature-tag">Камин</span>
+                        <span class="feature-tag">Веганские опции</span>
+                    </div>
+                </div>
+                
+                <div class="location-card">
+                    <h3 class="location-name">Бизнес-квартал</h3>
+                    <div class="location-details">
+                        <p>Пресненская наб., 12</p>
+                        <p>Метро: Выставочная</p>
+                        <p>Пн-Пт: 7:00 - 21:00</p>
+                    </div>
+                    <div class="location-features">
+                        <span class="feature-tag">Бизнес-ланчи</span>
+                        <span class="feature-tag">Переговорные</span>
+                        <span class="feature-tag">Быстрый Wi-Fi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="faq-section scroll-reveal">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли забронировать столик заранее?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете забронировать столик по телефону +7 (495) 123-45-67 или через форму на нашем сайте. Бронирование доступно за 24 часа.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Есть ли у вас веганские опции?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем растительное молоко (овсяное, миндальное, кокосовое) и веганские десерты. Уточняйте availability у бариста.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли провести мероприятие в вашей кофейне?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем пространство для мероприятий до 30 человек. Свяжитесь с нами для обсуждения деталей и бронирования.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Есть ли у вас программа лояльности?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть кофейная карта - после 9 покупок 10-я чашка кофе бесплатно. Также действуют специальные предложения для держателей карт.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Футер -->
+    <footer>
+        <p>© 2023 Blue Brew Coffee. Все права защищены.</p>
+    </footer>
+    
+    <!-- Код для анимаций -->
+    <script src="js/contacts.js"></script>
+</body>
+</html>

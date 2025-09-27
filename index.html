@@ -1,14 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blue Brew | Кофейня</title>
 </head>
 <body>
-    <h1>XUY</h1>
-    <h2>GOVNA</h2>
-    <h4>SUCK</h4>
-    фдлыворадфлжыоврадлфыовврадлфоврыадлорфывдлаор
+    <!-- Навигация -->
+    <nav>
+        <div class="logo">Blue Brew</div>
+        <div class="nav-links">
+            <a href="#home">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="menu.html">Меню</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </nav>
+    
+    <!-- Герой-секция -->
+    <section id="home" class="hero">
+        <div class="parallax-bg"></div>
+        <h1>Искусство в каждой чашке</h1>
+        <p>Откройте для себя уникальные вкусы кофе в атмосфере уюта и вдохновения</p>
+        <a href="#menu" class="btn">Исследовать меню</a>
+    </section>
+    
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="about-content scroll-reveal">
+            <h2>Наша философия</h2>
+            <p>Мы верим, что кофе — это не просто напиток, а настоящее искусство. Каждая чашка в нашей кофейне создается с вниманием к деталям, от выбора зерен до момента подачи.</p>
+            <p>Наши бариста проходят специальное обучение, чтобы раскрыть уникальные вкусовые ноты каждого сорта кофе. Мы сотрудничаем с небольшими фермами по всему миру, поддерживая устойчивое земледелие.</p>
+        </div>
+        <div class="about-image scroll-reveal"></div>
+    </section>
+    
+    <!-- Меню -->
+    <section id="menu" class="menu">
+        <h2 class="scroll-reveal">Наше меню</h2>
+        <p class="scroll-reveal">От классического эспрессо до авторских напитков — каждый найдет что-то по вкусу</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item scroll-reveal">
+                <h3>Эспрессо Blue</h3>
+                <p>Наш фирменный эспрессо с нотками черники и темного шоколада</p>
+            </div>
+            <div class="menu-item scroll-reveal">
+                <h3>Латте с лавандой</h3>
+                <p>Нежный латте с экстрактом лаванды и цветочным послевкусием</p>
+            </div>
+            <div class="menu-item scroll-reveal">
+                <h3>Холодный капучино</h3>
+                <p>Освежающий напиток с воздушной молочной пенкой</p>
+            </div>
+            <div class="menu-item scroll-reveal">
+                <h3>Фильтр-кофе</h3>
+                <p>Ежедневно обновляемая серия фильтр-кофе из разных регионов</p>
+            </div>
+        </div>
+        <a href="menu.html" class="btn" style="width: 20%;margin:auto">Больше</a>
+    </section>
+    
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <h2 class="scroll-reveal">Найдите нас</h2>
+        <p class="scroll-reveal">Мы ждем вас каждый день с 8:00 до 22:00</p>
+        
+        <div class="contact-form scroll-reveal">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" rows="5" placeholder="Ваше сообщение..."></textarea>
+            </div>
+            <a href="#" class="btn">Отправить</a>
+        </div>
+    </section>
+    
+    <!-- Футер -->
+    <footer>
+        <p>© 2023 Blue Brew Coffee. Все права защищены.</p>
+    </footer>
+    
+    <!-- Код для анимаций -->
+    <script>
+        // Анимация появления элементов при прокрутке
+        const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+        
+        const scrollReveal = () => {
+            scrollRevealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', scrollReveal);
+        window.addEventListener('load', scrollReveal);
+        
+        // Создание частиц
+        const particlesContainer = document.createElement('div');
+        particlesContainer.className = 'particles';
+        document.body.appendChild(particlesContainer);
+        
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            // Случайное положение
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            particle.style.left = `${x}vw`;
+            particle.style.top = `${y}vh`;
+            
+            // Случайный размер
+            const size = Math.random() * 3 + 1;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            
+            // Случайная задержка анимации
+            const delay = Math.random() * 5;
+            particle.style.animationDelay = `${delay}s`;
+            
+            particlesContainer.appendChild(particle);
+        }
+        
+        // Параллакс эффект
+        document.addEventListener('mousemove', (e) => {
+            const parallaxBg = document.querySelector('.parallax-bg');
+            const x = (e.clientX / window.innerWidth) * 50;
+            const y = (e.clientY / window.innerHeight) * 50;
+            
+            parallaxBg.style.transform = `translate(-${x}%, -${y}%)`;
+        });
+        
+        // Плавная прокрутка для навигационных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
